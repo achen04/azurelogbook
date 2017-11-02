@@ -28,6 +28,7 @@ urlpatterns = patterns('',
             }
         },
         name='login'),
+        url(r'^admin/', admin.site.urls),
     url(r'^logout$',
         'django.contrib.auth.views.logout',
         {
