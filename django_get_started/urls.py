@@ -14,7 +14,7 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'app.views.home', name='home'),
+    url(r'^$', admin.site.urls, name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
         url(r'^admin/', admin.site.urls),
